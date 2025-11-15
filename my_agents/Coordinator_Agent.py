@@ -1,3 +1,4 @@
+from my_agents.Greet_Agent import Greet_Agent
 from my_confg.my_configu import MODEL
 from agents import Agent, set_tracing_disabled
 from my_agents.Yield_agent import Yield_Agent
@@ -30,5 +31,5 @@ Coordinator_Agent = Agent(
 
 **Style:** Professional yet conversational - like a helpful expert.""",
     model=MODEL,
-    handoffs=[Yield_Agent, Market_Agent, Prediction_Agent]
+    handoffs=[Yield_Agent, Market_Agent, Prediction_Agent, Greet_Agent]
 )
